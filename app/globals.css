@@ -3,14 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  /* 基础色 */
+  --background: #fbf6f3;
   --foreground: #171717;
+
+  /* 主色系 */
+  --primary: #8e0e10; /* 最浅 */
+  /* --primary-100: #dcfce7;
+  --primary-500: #22c55e; /* 主品牌色 */
+  /* --primary-900: #14532d; /* 最深  */
+
+  /* 辅助色 */
+  --secondary-500: #3b82f6; /* 蓝 */
+  --accent-500: #eab308; /* 强调黄 */
+
+  /* 中性色 */
+  --gray-50: #f9fafb;
+  --gray-200: #e5e7eb;
+  --gray-500: #6b7280;
+  --gray-800: #1f2937;
+
+  /* 状态色 */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+
+  /* 特殊效果 */
+  --overlay: rgba(0, 0, 0, 0.5); /* 遮罩层 */
+  --shadow-color: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #fbf6f3;
+    --foreground: #171717;
   }
 }
 
