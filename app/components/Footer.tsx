@@ -1,51 +1,37 @@
+import { FaFacebook, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
+
 export default function Footer() {
   return (
-    <footer className='row-start-3 flex gap-6 flex-wrap items-center justify-center'>
-      <a
-        className='flex items-center gap-2 hover:underline hover:underline-offset-4'
-        href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        {/* <Image
-            aria-hidden
-            src='/file.svg'
-            alt='File icon'
-            width={16}
-            height={16}
-          /> */}
-        Learn
-      </a>
-      <a
-        className='flex items-center gap-2 hover:underline hover:underline-offset-4'
-        href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        {/* <Image
-            aria-hidden
-            src='/window.svg'
-            alt='Window icon'
-            width={16}
-            height={16}
-          /> */}
-        Examples
-      </a>
-      <a
-        className='flex items-center gap-2 hover:underline hover:underline-offset-4'
-        href='https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        {/* <Image
-            aria-hidden
-            src='/globe.svg'
-            alt='Globe icon'
-            width={16}
-            height={16}
-          /> */}
-        Go to nextjs.org →
-      </a>
+    <footer className='h-24 w-full flex flex-row items-center px-12 justify-between bg-primary text-white'>
+      <p>© Paskenta Band of Nomlaki Indians Copyright 2025.</p>
+
+      <div className='flex flex-row items-center'>
+        <p>Connect with Us:</p>
+        <a
+          href='https://www.facebook.com/paskentabandofnomlakiindians/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='mx-1'
+        >
+          <FaFacebook className='size-6' />
+        </a>
+        <a
+          href='https://www.linkedin.com/company/paskenta-band-of-nomlaki-indians/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='mx-1'
+        >
+          <FaLinkedin className='size-6' />
+        </a>
+        <a
+          href='https://twitter.com/paskentaband'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='mx-1'
+        >
+          <FaXTwitter className='size-6' />
+        </a>
+      </div>
     </footer>
   );
 }

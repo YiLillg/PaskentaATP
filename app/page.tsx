@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       {/* Mission Section */}
-      <div className='flex flex-col items-center justify-center my-12'>
+      <div className='flex flex-col items-center justify-center mt-12 mb-24'>
         <div className='flex flex-row size-16 items-center justify-center mb-8'>
           <Image src={lefterrow} alt='left arrow' className='z-0 mr-6' />
           <h1 className='font-extrabold text-3xl mx-6'>Mission</h1>
