@@ -12,7 +12,7 @@ import logo from '@/public/Logo.png';
 export const Logo = () => {
   return (
     <div>
-      <Image src={logo} alt='Tribe Icon' width={300} className='mt-24 ' />
+      <Image src={logo} alt='Tribe Icon' width={300} className='mt-24' />
     </div>
   );
 };
@@ -21,33 +21,35 @@ export default function App() {
   return (
     <Navbar className='h-24 w-full flex p-4 font-bold bg-primary text-white text-xl justify-between'>
       <NavbarBrand>
-        <Logo />
+        <Link href='/'>
+          <Logo />
+        </Link>
       </NavbarBrand>
       <NavbarContent
         className='hidden sm:flex gap-4 mx-8 px-4'
         justify='center'
       >
         <NavbarItem>
-          <Link color='foreground' href='#publicout-reach' className='mx-2'>
+          <Link color='foreground' href='/publicout-reach' className='mx-2'>
             Public Outreach
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current='page' href='#project-status' className='mx-2'>
+          <Link aria-current='page' href='/project-status' className='mx-2'>
             Project Status
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             color='foreground'
-            href='#documentation-and-reference'
+            href='/documentation-and-reference'
             className='mx-2'
           >
             Documentations & Resources
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color='foreground' href='#contact-us' className='mx-2'>
+          <Link color='foreground' href='/contact-us' className='mx-2'>
             Contact Us
           </Link>
         </NavbarItem>
