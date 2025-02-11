@@ -53,7 +53,7 @@ export default function App() {
             href='/documentation-and-reference'
             className='mx-2 text-white'
           >
-            Documentations & Resources
+            Documentations
           </Link>
         </NavbarItem>
         <NavbarItem>

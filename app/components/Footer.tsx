@@ -2,7 +2,7 @@ import { FaFacebook, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   return (
-    <footer className='h-24 w-full flex flex-row items-center px-12 justify-between bg-primary text-white'>
+    <footer className='h-24 w-full flex flex-row items-center px-12 justify-between bg-primary text-white z-10'>
       <p>© Paskenta Band of Nomlaki Indians Copyright 2025.</p>
 
       <div className='flex flex-row items-center'>
