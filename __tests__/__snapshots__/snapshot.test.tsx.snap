@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Snapshot matches the snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-col items-center"
+  >
+    <div
+      class="relative w-full h-screen flex flex-col items-center justify-center"
+    >
+      <img
+        alt="Home page background image"
+        class="z-0"
+        src="[object Object]"
+        style="opacity: 0.15; object-fit: cover;"
+      />
+      <div
+        class="z-10 flex flex-col items-center justify-center text-center px-24"
+      >
+        <h1
+          class="font-extrabold text-5xl"
+        >
+          Paskenta Active Transportation Plan
+        </h1>
+        <p
+          class="font-semibold text-lg mt-4"
+        >
+          Our goal is to achieve a 50% reduction in pedestrian and cyclist fatalities and serious injuries by 2030 by prioritizing equitable infrastructure upgrades, traffic calming measures, and safety education, with a focus on high-risk corridors and underserved communities.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex items-center justify-center"
+    >
+      <img
+        alt="badge in landing page"
+        class="z-0"
+        src="[object Object]"
+      />
+    </div>
+    <div
+      class="flex flex-col items-center justify-center mt-12 mb-24"
+    >
+      <div
+        class="flex flex-row size-16 items-center justify-center mb-8"
+      >
+        <img
+          alt="left arrow"
+          class="z-0 mr-6"
+          src="[object Object]"
+        />
+        <h1
+          class="font-extrabold text-3xl mx-6"
+        >
+          Mission
+        </h1>
+        <img
+          alt="right arrow"
+          class="z-0"
+          src="[object Object]"
+        />
+      </div>
+      <div
+        class="px-24"
+      >
+        <p>
+          The Paskenta Band of Nomlaki Indians is committed to fostering a safe, sustainable, and connected community through an equitable and culturally respectful active transportation plan. By prioritizing the health, well-being, and mobility of our tribal members and neighbors, we aim to create accessible pathways, promote walking and cycling, and honor our ancestral lands while reducing our environmental impact. Together, we will build a future where every journey reflects our values of stewardship, unity, and resilience.
+        </p>
+        <br
+          class="size-6"
+        />
+        <p
+          class="my-2"
+        >
+          Key Elements:
+        </p>
+        <ul
+          class="list-disc list-inside space-y-2"
+        >
+          <li>
+            <span
+              class="font-bold"
+            >
+              Cultural Respect: 
+            </span>
+            Honors the tribe's heritage and connection to the land.
+             
+          </li>
+          <li>
+            <span
+              class="font-bold"
+            >
+              Equity and Accessibility: 
+            </span>
+            Ensures all community members, including elders and youth, have safe and accessible transportation options.
+          </li>
+          <li>
+            <span
+              class="font-bold"
+            >
+              Sustainability:
+            </span>
+             Reduces environmental impact and promotes healthy lifestyles.
+             
+          </li>
+          <li>
+            <span
+              class="font-bold"
+            >
+              Community Focus: 
+            </span>
+            Prioritizes the needs of tribal members and neighboring communities.
+             
+          </li>
+           
+          <li>
+            <span
+              class="font-bold"
+            >
+              Safety and Connectivity: 
+            </span>
+            Builds infrastructure that connects people to key destinations safely.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
