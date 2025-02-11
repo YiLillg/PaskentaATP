@@ -11,7 +11,7 @@ import logo from '@/public/Logo.png';
 
 export const Logo = () => {
   return (
-    <div>
+    <div className='z-50'>
       <Image src={logo} alt='Tribe Icon' width={300} className='mt-24' />
     </div>
   );
@@ -19,7 +19,7 @@ export const Logo = () => {
 
 export default function App() {
   return (
-    <Navbar className='h-24 w-full flex p-4 font-bold bg-primary text-white text-xl justify-between'>
+    <Navbar className='z-50 h-24 w-full flex p-4 font-bold bg-primary text-white text-xl justify-between fixed top-0 left-0'>
       <NavbarBrand>
         <Link href='/'>
           <Logo />
@@ -30,12 +30,20 @@ export default function App() {
         justify='center'
       >
         <NavbarItem>
-          <Link color='foreground' href='/publicout-reach' className='mx-2'>
+          <Link
+            color='foreground'
+            href='/public-outreach'
+            className='mx-2 text-white'
+          >
             Public Outreach
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current='page' href='/project-status' className='mx-2'>
+          <Link
+            aria-current='page'
+            href='/project-status'
+            className='mx-2 text-white'
+          >
             Project Status
           </Link>
         </NavbarItem>
@@ -43,28 +51,21 @@ export default function App() {
           <Link
             color='foreground'
             href='/documentation-and-reference'
-            className='mx-2'
+            className='mx-2 text-white'
           >
             Documentations & Resources
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color='foreground' href='/contact-us' className='mx-2'>
+          <Link
+            color='foreground'
+            href='/contact-us'
+            className='mx-2 text-white'
+          >
             Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
-
-      {/* <NavbarContent justify='end'>
-        <NavbarItem className='hidden lg:flex'>
-          <Link href='#'>Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color='primary' href='#' variant='flat'>
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent> */}
     </Navbar>
   );
 }
