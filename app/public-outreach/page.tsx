@@ -7,8 +7,8 @@ import Image from 'next/image';
 import badge from '@/public/badge.jpg';
 import groupPhoto from '@/public/Group-Photo-Edit.jpg';
 import verticalBanner from '@/public/verticalbanner.jpg';
-import lefterrow from '@/public/left-arrow.jpg';
-import righterror from '@/public/right-arrow.jpg';
+import leftarrow from '@/public/left-arrow.jpg';
+import rightarrow from '@/public/right-arrow.jpg';
 import StreetStory from '@/public/StreetStory.png';
 
 export default function PublicOutreach() {
@@ -55,23 +55,35 @@ export default function PublicOutreach() {
             alt='background banner'
             className='h-full w-full object-cover'
           />
+          <div className='absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-foreground z-20 w-max mt-8'>
+            {/* Title with Arrows */}
+            <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
+              <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
+              <h1 className='text-2xl font-bold mx-2'>Stakeholder Lists</h1>
+              <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
+            </div>
 
-          <div className='absolute top-0 left-1/2 -translate-x-1/2 flex flex-row items-center justify-center text-foreground z-20 mt-12 p-2 whitespace-nowrap w-max'>
-            <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
-            <h1 className='text-2xl font-bold mx-2'>Stakeholder Lists</h1>
-            <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
+            {/* Stakeholder List */}
+            <ul className='mt-4 text-base list-disc list-inside text-center space-y-2'>
+              <li>Tribal Council Members</li>
+              <li>Tribal Attorney</li>
+              <li>Tribal Chairman</li>
+              <li>Bureau of Indian Affairs (BIA) Representatives</li>
+              <li>Non-profit Organizations</li>
+              <li>Fire Department</li>
+              <li>Lead Neighboring Tribal Leaders</li>
+            </ul>
           </div>
+          ˝
         </div>
 
         {/* Right Section - 2/3 Width */}
         <div className='w-2/3 h-full flex flex-col items-center justify-center p-6 mx-6'>
           {/* title */}
-          <div className='flex flex-row size-16 items-center justify-center mb-8 text-primary whitespace-nowrap'>
-            <Image src={lefterrow} alt='left arrow' className='z-0 mr-6' />
-            <h1 className='font-extrabold text-3xl mx-6'>
-              Share Inputs with Us
-            </h1>
-            <Image src={righterror} alt='right arrow' className='z-0' />
+          <div className='flex flex-row size-16 items-center justify-center mb-8 text-primary whitespace-nowrap mx-6 my-12'>
+            <Image src={leftarrow} alt='left arrow' className='z-0 mr-6' />
+            <h1 className='font-extrabold text-3xl'>Share Inputs with Us</h1>
+            <Image src={rightarrow} alt='right arrow' className='z-0 ml-6' />
           </div>
           <h1 className='text-lg font-normal text-foreground text-center mb-8'>
             Your voice matters! Help shape the future of our community by
