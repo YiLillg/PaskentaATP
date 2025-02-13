@@ -46,7 +46,7 @@ export default function App() {
         <NavbarItem>
           <Link
             color='foreground'
-            href='/documentation-and-reference'
+            href='/documentations'
             className='mx-2 text-white'
           >
             Documentations
