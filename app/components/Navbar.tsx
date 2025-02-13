@@ -30,7 +30,11 @@ export default function App() {
         justify='center'
       >
         <NavbarItem>
-          <Link color='foreground' href='/outreach' className='mx-2 text-white'>
+          <Link
+            color='foreground'
+            href='/public-outreach'
+            className='mx-2 text-white'
+          >
             Public Outreach
           </Link>
         </NavbarItem>

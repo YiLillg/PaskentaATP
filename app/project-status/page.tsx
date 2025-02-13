@@ -2,6 +2,7 @@ import {
   MdKeyboardDoubleArrowLeft,
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md';
+import { Card, CardHeader, CardBody, Button } from '@heroui/react';
 
 import Image from 'next/image';
 import badge from '@/public/badge.jpg';
@@ -46,61 +47,48 @@ export default function PublicOutreach() {
         <Image src={badge} alt='badge in landing page' className='z-0' />
       </div>
 
-      <section className='flex h-screen'>
-        {/* left section */}
-        <div className='relative w-1/2 h-full p-6 ml-6 '>
-          <Image
-            src={verticalBanner}
-            alt='background banner'
-            className='h-full w-full object-cover rounded-3xl'
-          />
-          <div className='absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-foreground z-20 w-max mt-8'>
-            <div className='flex flex-row items-center justify-center whitespace-nowrap p-2 text-primary mt-8'>
-              <Image
-                src={leftarrow}
-                alt='left arrow'
-                className='z-0 mr-6 w-8 h-8'
-              />
-              <h1 className='font-extrabold text-2xl'>Incomning Events</h1>
-              <Image
-                src={rightarrow}
-                alt='right arrow'
-                className='z-0 ml-6 w-8 h-8'
-              />
-            </div>
+      <section className='flex flex-col w-full gap-6 p-6 h-auto flex-grow'>
+        <h2 className='py-8 px-20 pb-24'>
+          In January 2025, the Tribe began partnering with LLG Engineers, a
+          transportation consulting firm, to assist with the SS4A Plan.
+          Subsequently, the team is working on the initial tasks, including data
+          collections, public outreach, review of background documentations, and
+          development of a Community Engagement Plan. We are encourage everyone
+          to share their inputs, and help us sharpen a better active
+          transportation plan for the tribe.
+        </h2>
 
-            <p className='mt-4 text-base list-disc list-inside text-center space-y-2'>
+        {/* Incoming Events */}
+        <Card className='w-full p-6 min-h-48 shadow-lg'>
+          <CardHeader className='flex flex-col items-center'>
+            <div className='flex items-center justify-center gap-4 text-primary'>
+              <Image src={leftarrow} alt='left arrow' className='w-6 h-6' />
+              <h1 className='font-extrabold text-2xl py-4'>Incoming Events</h1>
+              <Image src={rightarrow} alt='right arrow' className='w-6 h-6' />
+            </div>
+          </CardHeader>
+          <CardBody className='text-center'>
+            <p className='text-base'>
               Check back for more information to stay up-to-date.
             </p>
-          </div>
-        </div>
+          </CardBody>
+        </Card>
 
-        <div className='relative w-1/2 h-full p-6 mr-6'>
-          <Image
-            src={verticalBanner}
-            alt='background banner'
-            className='h-full w-full object-cover rounded-3xl'
-          />
-          <div className='absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-foreground z-20 w-max mt-8'>
-            <div className='flex flex-row items-center justify-center whitespace-nowrap p-2 text-primary mt-8'>
-              <Image
-                src={leftarrow}
-                alt='left arrow'
-                className='z-0 mr-6 w-8 h-8'
-              />
-              <h1 className='font-extrabold text-2xl'>Past Events</h1>
-              <Image
-                src={rightarrow}
-                alt='right arrow'
-                className='z-0 ml-6 w-8 h-8'
-              />
+        {/* Past Events */}
+        <Card className='w-full p-6  min-h-48  shadow-lg'>
+          <CardHeader className='flex flex-col items-center'>
+            <div className='flex items-center justify-center gap-4 text-primary'>
+              <Image src={leftarrow} alt='left arrow' className='w-6 h-6' />
+              <h1 className='font-extrabold text-2xl py-4'>Past Events</h1>
+              <Image src={rightarrow} alt='right arrow' className='w-6 h-6' />
             </div>
-
-            <p className='mt-4 text-base list-disc list-inside text-center space-y-2'>
+          </CardHeader>
+          <CardBody className='text-center'>
+            <p className='text-base'>
               Check back for more information to stay up-to-date.
             </p>
-          </div>
-        </div>
+          </CardBody>
+        </Card>
       </section>
     </div>
   );
