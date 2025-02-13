@@ -75,7 +75,7 @@ export default function PublicOutreach() {
         </Card>
 
         {/* Past Events */}
-        <Card className='w-full p-6  min-h-48  shadow-lg'>
+        <Card className='w-full p-6  min-h-48  shadow-lg mb-24'>
           <CardHeader className='flex flex-col items-center'>
             <div className='flex items-center justify-center gap-4 text-primary'>
               <Image src={leftarrow} alt='left arrow' className='w-6 h-6' />

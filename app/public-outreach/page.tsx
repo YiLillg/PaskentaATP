@@ -2,6 +2,7 @@ import {
   MdKeyboardDoubleArrowLeft,
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md';
+import { Card, CardHeader, CardBody, Button } from '@heroui/react';
 
 import Image from 'next/image';
 import badge from '@/public/badge.jpg';
@@ -49,22 +50,17 @@ export default function PublicOutreach() {
 
       <section className='flex h-screen'>
         {/* Left Section - 1/3 Width */}
-        <div className='relative w-1/3 h-full'>
-          <Image
-            src={verticalBanner}
-            alt='background banner'
-            className='h-full w-full object-cover'
-          />
-          <div className='absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center text-foreground z-20 w-max mt-8'>
-            {/* Title with Arrows */}
-            <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
-              <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
-              <h1 className='text-2xl font-bold mx-2'>Stakeholder Lists</h1>
-              <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
-            </div>
+        <Card className='w-1/3 p-6 shadow-2xl flex flex-col items-center h-full'>
+          {/* Title with Arrows */}
+          <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
+            <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
+            <h1 className='text-2xl font-bold mx-2'>Stakeholder Lists</h1>
+            <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
+          </div>
 
-            {/* Stakeholder List */}
-            <ul className='mt-4 text-base list-disc list-inside text-center space-y-2'>
+          {/* Stakeholder List */}
+          <CardBody className='mt-4'>
+            <ul className='text-base list-disc list-inside text-center space-y-2'>
               <li>Tribal Council Members</li>
               <li>Tribal Attorney</li>
               <li>Tribal Chairman</li>
@@ -73,9 +69,8 @@ export default function PublicOutreach() {
               <li>Fire Department</li>
               <li>Lead Neighboring Tribal Leaders</li>
             </ul>
-          </div>
-          ˝
-        </div>
+          </CardBody>
+        </Card>
 
         {/* Right Section - 2/3 Width */}
         <div className='w-2/3 h-full flex flex-col items-center justify-center p-6 mx-6'>
@@ -107,7 +102,7 @@ export default function PublicOutreach() {
             className='rounded-lg'
           />
 
-          <h2 className='text-lg font-bold text-primary text-center my-8'>
+          <h2 className='text-lg font-bold text-primary text-center my-8 mb-24'>
             Click Here to Participate in the Survey:{' '}
             <a
               href='/Survey.pdf'

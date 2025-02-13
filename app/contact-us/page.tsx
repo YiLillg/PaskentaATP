@@ -102,7 +102,7 @@ export default function ContactUs() {
       </div>
 
       {/* Contact Section */}
-      <section className='flex flex-col lg:flex-row gap-8 p-6 mx-4 md:mx-6'>
+      <section className='flex flex-col lg:flex-row gap-8 p-6 mx-4 md:mx-6 pb-24'>
         {/* Office Info Card */}
         <div className='lg:w-1/2 w-full flex mx-auto'>
           <Card className='bg-primary text-white p-6 rounded-xl shadow-lg flex-grow min-h-[350px] flex flex-col justify-between'>
