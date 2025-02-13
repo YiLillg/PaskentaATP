@@ -1,38 +1,45 @@
+'use client';
+
 import Image from 'next/image';
 import background from '@/public/LandingPage.jpg';
+import { motion } from 'framer-motion';
 import badge from '@/public/badge.jpg';
 import lefterrow from '@/public/left-arrow.jpg';
 import righterror from '@/public/right-arrow.jpg';
 
 export default function Home() {
   return (
-    <div className='flex flex-col items-center'>
-      <div className='relative w-full h-screen flex flex-col items-center justify-center'>
-        {/* Background Image */}
+    <div className='flex flex-col items-center text-gray-900'>
+      {/* Hero Section */}
+      <div className='relative w-full h-screen flex flex-col items-center justify-center text-center'>
+        {/* Background Image with Overlay */}
+        <div className='absolute inset-0 bg-black/80 z-0' />
         <Image
           src={background}
           alt='Home page background image'
           fill
-          className='z-0'
-          style={{
-            opacity: 0.15,
-            objectFit: 'cover',
-          }}
+          className='object-cover z-0'
+          style={{ opacity: 0.2 }}
         />
 
         {/* Content */}
-        <div className='z-10 flex flex-col items-center justify-center text-center px-24'>
-          <h1 className='font-extrabold text-5xl'>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className='z-10 px-6 max-w-4xl'
+        >
+          <h1 className='font-extrabold text-5xl text-white drop-shadow-lg'>
             Paskenta Active Transportation Plan
           </h1>
-          <p className='font-semibold text-lg mt-4'>
+          <p className='font-medium text-lg text-white mt-4 leading-relaxed'>
             Our goal is to achieve a 50% reduction in pedestrian and cyclist
             fatalities and serious injuries by 2030 by prioritizing equitable
             infrastructure upgrades, traffic calming measures, and safety
             education, with a focus on high-risk corridors and underserved
             communities.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Badge Image */}
