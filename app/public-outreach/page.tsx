@@ -2,9 +2,9 @@ import {
   MdKeyboardDoubleArrowLeft,
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md';
-import { Card, CardHeader, CardBody, Button } from '@heroui/react';
-
+import { Card, CardBody } from '@heroui/react';
 import Image from 'next/image';
+
 import badge from '@/public/badge.jpg';
 import groupPhoto from '@/public/Group-Photo-Edit.jpg';
 import verticalBanner from '@/public/verticalbanner.jpg';
@@ -15,8 +15,8 @@ import StreetStory from '@/public/StreetStory.png';
 export default function PublicOutreach() {
   return (
     <div className='flex flex-col z-10'>
-      <div className='w-full flex items-center justify-center z-10 relative'>
-        {/* 添加渐变层 */}
+      {/* Header Section */}
+      <div className='w-full flex items-center justify-center relative z-10'>
         <div
           className='relative w-full'
           style={{
@@ -48,18 +48,21 @@ export default function PublicOutreach() {
         <Image src={badge} alt='badge in landing page' className='z-0' />
       </div>
 
-      <section className='flex h-screen'>
-        {/* Left Section - 1/3 Width */}
-        <Card className='w-1/3 p-6 shadow-2xl flex flex-col items-center h-full'>
+      {/* Main Section */}
+      <section className='flex flex-col md:flex-row min-h-screen p-4 gap-6'>
+        {/* Left Section - Stakeholder List */}
+        <Card className='w-full md:w-1/3 p-6 shadow-2xl flex flex-col items-center h-auto md:h-full flex-grow'>
           {/* Title with Arrows */}
           <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
             <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
-            <h1 className='text-2xl font-bold mx-2'>Stakeholder Lists</h1>
+            <h1 className='text-2xl font-bold mx-2 text-center'>
+              Stakeholder Lists
+            </h1>
             <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
           </div>
 
           {/* Stakeholder List */}
-          <CardBody className='mt-4'>
+          <CardBody className='mt-4 w-full flex-grow flex flex-col justify-start'>
             <ul className='text-base list-disc list-inside text-center space-y-2'>
               <li>Tribal Council Members</li>
               <li>Tribal Attorney</li>
@@ -72,23 +75,38 @@ export default function PublicOutreach() {
           </CardBody>
         </Card>
 
-        {/* Right Section - 2/3 Width */}
-        <div className='w-2/3 h-full flex flex-col items-center justify-center p-6 mx-6'>
-          {/* title */}
-          <div className='flex flex-row size-16 items-center justify-center mb-8 text-primary whitespace-nowrap mx-6 my-12'>
-            <Image src={leftarrow} alt='left arrow' className='z-0 mr-6' />
-            <h1 className='font-extrabold text-3xl'>Share Inputs with Us</h1>
-            <Image src={rightarrow} alt='right arrow' className='z-0 ml-6' />
+        {/* Right Section - Public Input */}
+        <div className='w-full md:w-2/3 flex flex-col items-center justify-center p-6 md:h-full'>
+          {/* Title */}
+          <div className='flex flex-row items-center justify-center mb-8 text-primary whitespace-nowrap'>
+            <Image src={leftarrow} alt='left arrow' className='w-8 h-8 mr-4' />
+            <h1 className='font-extrabold text-2xl md:text-3xl text-center'>
+              Share Inputs with Us
+            </h1>
+            <Image
+              src={rightarrow}
+              alt='right arrow'
+              className='w-8 h-8 ml-4'
+            />
           </div>
-          <h1 className='text-lg font-normal text-foreground text-center mb-8'>
-            Your voice matters! Help shape the future of our community by
-            sharing your thoughts, experiences, or reporting
-            collisions/near-misses on the Street Story website. Together, we can
-            create safer roads and pathways for everyone. Let’s make a
-            difference—share your story today!
+
+          {/* Description */}
+          <h1 className='text-base md:text-lg text-foreground text-left mb-6 '>
+            We want to hear your ideas and your experiences using the roadways
+            in the Laguna Beach. We have prepared an Interactive Webmap where
+            you can identify places where you've experienced roadway safety
+            challenges traveling, whether in a car, on foot, on a bike, or on
+            another mode. You can also identify specific safety concerns, such
+            as speeding cars, poorly lit areas, or lack of sidewalks. Along with
+            the Webmap is a survey where you can share you experiences with
+            traveling in the City of Laguna Beach and your vision for the future
+            of our roadways. The comment period is now closed as of 11/19.
+            Information and updates about the project can be found on the City's
+            website.
           </h1>
 
-          <h2 className='text-lg font-bold text-primary text-center mb-8'>
+          {/* Report Link */}
+          <h2 className='text-lg font-bold text-primary text-center mb-6'>
             Click Here to Report:{' '}
             <span className='underline'>
               <a href='https://streetstory.berkeley.edu/city/pastenta#'>
@@ -96,13 +114,16 @@ export default function PublicOutreach() {
               </a>
             </span>
           </h2>
+
+          {/* Image */}
           <Image
             src={StreetStory}
-            alt='street story sceenshots'
+            alt='Street Story Screenshot'
             className='rounded-lg'
           />
 
-          <h2 className='text-lg font-bold text-primary text-center my-8 mb-24'>
+          {/* Survey Download Link */}
+          <h2 className='text-lg font-bold text-primary text-center my-8'>
             Click Here to Participate in the Survey:{' '}
             <a
               href='/Survey.pdf'
