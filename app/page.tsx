@@ -29,7 +29,7 @@ export default function Home() {
           transition={{ duration: 1 }}
           className='z-10 px-6 max-w-4xl'
         >
-          <h1 className='font-extrabold text-5xl text-white drop-shadow-lg'>
+          <h1 className='font-extrabold text-5xl text-white drop-shadow-lg '>
             Paskenta Active Transportation Plan
           </h1>
           <p className='font-medium text-lg text-white mt-4 leading-relaxed'>
@@ -52,7 +52,7 @@ export default function Home() {
         <div className='flex flex-row size-16 items-center justify-center mb-8'>
           <Image src={lefterrow} alt='left arrow' className='z-0 mr-6' />
           <h1 className='font-extrabold text-3xl mx-6'>Mission</h1>
-          <Image src={righterror} alt='right arrow' className='z-0' />
+          <Image src={righterror} alt='right arrow' className='z-0 ml-6' />
         </div>
         <div className='px-24'>
           <p>
@@ -66,28 +66,47 @@ export default function Home() {
             journey reflects our values of stewardship, unity, and resilience.
           </p>
           <br className='size-6' />
-          <p className='my-2'>Key Elements:</p>
+          <p className='my-2'>Our five objectives:</p>
           <ul className='list-disc list-inside space-y-2'>
             <li>
-              <span className='font-bold'>Cultural Respect: </span>Honors the
-              tribe's heritage and connection to the land.{' '}
+              <span className='font-bold'>
+                Enhance Transportation Safety and Equity:{' '}
+              </span>{' '}
+              Identify high-risk areas for crashes using crash history and
+              transportation data while ensuring a safe, sustainable,
+              integrated, and efficient system for all users, particularly
+              disadvantaged Tribal communities.
             </li>
             <li>
-              <span className='font-bold'>Equity and Accessibility: </span>
-              Ensures all community members, including elders and youth, have
-              safe and accessible transportation options.
+              <span className='font-bold'>
+                Develop a Comprehensive Safety Strategy:{' '}
+              </span>
+              Establish a structured safety program and toolbox that aligns with
+              best practices, supports systemic safety improvements, and fosters
+              opportunities for future initiatives.
             </li>
             <li>
-              <span className='font-bold'>Sustainability:</span> Reduces
-              environmental impact and promotes healthy lifestyles.{' '}
+              <span className='font-bold'>
+                Target Key Emphasis Areas for Safety Interventions:{' '}
+              </span>{' '}
+              Use crash analysis, tribal objectives, and Tribal community
+              insights to prioritize areas for safety improvements and
+              transportation equity.
             </li>
             <li>
-              <span className='font-bold'>Community Focus: </span>Prioritizes
-              the needs of tribal members and neighboring communities.{' '}
+              <span className='font-bold'>
+                Plan and Prioritize Safety Improvements:{' '}
+              </span>{' '}
+              Define short-, mid-, and long-term safety enhancements with
+              funding considerations.
             </li>{' '}
             <li>
-              <span className='font-bold'>Safety and Connectivity: </span>Builds
-              infrastructure that connects people to key destinations safely.
+              <span className='font-bold'>
+                Recommend Implementation and Fund Sources for Countermeasures:{' '}
+              </span>{' '}
+              Develop, propose countermeasure projects and recommend funding
+              programs, considering cost, effort, and timeline to maximize
+              impact.
             </li>
           </ul>
         </div>

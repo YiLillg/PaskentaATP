@@ -49,34 +49,56 @@ export default function PublicOutreach() {
       </div>
 
       {/* Main Section */}
-      <section className='flex flex-col md:flex-row min-h-screen p-4 gap-6'>
-        {/* Left Section - Stakeholder List */}
-        <Card className='w-full md:w-1/3 p-6 shadow-2xl flex flex-col items-center h-auto md:h-full flex-grow'>
-          {/* Title with Arrows */}
-          <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
-            <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
-            <h1 className='text-2xl font-bold mx-2 text-center'>
-              Stakeholder Lists
-            </h1>
-            <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
-          </div>
+      <section className='flex flex-col md:flex-row  md:min-h-screen sm:h-auto p-4 gap-6'>
+        <div className='flex flex-col w-full md:w-1/3 h-screen'>
+          {/* Stakeholder List Section */}
+          <Card className='p-6 shadow-2xl flex flex-col items-center md:h-1/2 sm:h-auto '>
+            {/* Title with Arrows */}
+            <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
+              <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
+              <h1 className='text-2xl font-bold mx-2 text-center'>
+                Stakeholder Lists
+              </h1>
+              <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
+            </div>
 
-          {/* Stakeholder List */}
-          <CardBody className='mt-4 w-full flex-grow flex flex-col justify-start'>
-            <ul className='text-base list-disc list-inside text-center space-y-2'>
-              <li>Tribal Council Members</li>
-              <li>Tribal Attorney</li>
-              <li>Tribal Chairman</li>
-              <li>Bureau of Indian Affairs (BIA) Representatives</li>
-              <li>Non-profit Organizations</li>
-              <li>Fire Department</li>
-              <li>Lead Neighboring Tribal Leaders</li>
-            </ul>
-          </CardBody>
-        </Card>
+            {/* Stakeholder List */}
+            <CardBody className='mt-4 w-full flex-grow flex flex-col justify-start'>
+              <ul className='text-base list-disc list-inside text-center space-y-2'>
+                <li>Tribal Council Members</li>
+                <li>Tribal Attorney</li>
+                <li>Tribal Chairman</li>
+                <li>Bureau of Indian Affairs (BIA) Representatives</li>
+                <li>Non-profit Organizations</li>
+                <li>Fire Department</li>
+                <li>Lead Neighboring Tribal Leaders</li>
+              </ul>
+            </CardBody>
+          </Card>
+
+          {/* Contact Us Section */}
+          <Card className='p-6 shadow-2xl flex flex-col items-center md:h-1/2 sm:h-1/2 sm:mt-16'>
+            {/* Title with Arrows */}
+            <div className='flex flex-row items-center justify-center whitespace-nowrap p-2'>
+              <MdKeyboardDoubleArrowLeft size={24} className='text-primary' />
+              <h1 className='text-2xl font-bold mx-2 text-center'>
+                Contact Us
+              </h1>
+              <MdKeyboardDoubleArrowRight size={24} className='text-primary' />
+            </div>
+
+            {/* Contact Information */}
+            <CardBody className='mt-4 w-full flex-grow flex flex-col justify-start sm:items-center py-2'>
+              <p className='py-4'>Have a question? Contact us!</p>
+              <p className='py-1'>Name: Yi Li</p>
+              <p className='py-1'>Phone: (111) 222 - 3333</p>
+              <p className='py-1'>Email: li@llgengineers.com</p>
+            </CardBody>
+          </Card>
+        </div>
 
         {/* Right Section - Public Input */}
-        <div className='w-full md:w-2/3 flex flex-col items-center justify-center p-6 md:h-full'>
+        <div className='w-full md:w-2/3 flex flex-col items-center justify-center p-6 sm:h-auto'>
           {/* Title */}
           <div className='flex flex-row items-center justify-center mb-8 text-primary whitespace-nowrap'>
             <Image src={leftarrow} alt='left arrow' className='w-8 h-8 mr-4' />

@@ -46,7 +46,9 @@ export default function PublicOutreach() {
         <Image src={badge} alt='badge in landing page' className='z-0' />
       </div>
 
-      <section className='flex flex-col w-full gap-6 p-6 mb-24'></section>
+      <section className='flex flex-col w-full gap-6 p-6 mb-24 min-h-screen items-center'>
+        <h1>Please checkout later to keep up-to-date</h1>
+      </section>
     </div>
   );
 }
