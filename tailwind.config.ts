@@ -8,6 +8,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        barlow: ['Barlow Semi Condensed', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',

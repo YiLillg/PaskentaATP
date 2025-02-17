@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 import badge from '@/public/badge.jpg';
 import groupPhoto from '@/public/Group-Photo-Edit.jpg';
-import verticalBanner from '@/public/verticalbanner.jpg';
 import leftarrow from '@/public/left-arrow.jpg';
 import rightarrow from '@/public/right-arrow.jpg';
 import StreetStory from '@/public/StreetStory.png';
