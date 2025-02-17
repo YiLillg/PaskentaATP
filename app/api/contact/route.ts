@@ -1,7 +1,6 @@
 import { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-import { truncate } from 'node:fs';
 
 dotenv.config();
 
@@ -33,9 +32,9 @@ export async function POST(request: NextRequest) {
 
     // Configure nodemailer
     const transporter = nodemailer.createTransport({
-      host: 'smtp.office365.com',
-      port: 587,
-      secure: false,
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
       auth: {
         user: userEmail,
         pass: userPass,
@@ -43,10 +42,10 @@ export async function POST(request: NextRequest) {
     });
 
     const mailOptions = {
-      from: `"Your Name" <${userEmail}>`,
+      from: `"Public Inputs" <${userEmail}>`,
       to: receiverEmail,
       subject: 'New Contact Form Submission',
-      text: `You have a new contact form submission:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      text: `You have a new form submission from Paskenta ATP website:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);
