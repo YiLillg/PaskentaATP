@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Paskenta-ATP',
-  description: 'Report ATP Development Status',
+  title: 'Paskenta-SAP',
+  description: 'Paskenta SAP Project',
 };
 
 export default function RootLayout({
