@@ -2,12 +2,11 @@ import {
   MdKeyboardDoubleArrowLeft,
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md';
-import { Card, CardHeader, CardBody, Button } from '@heroui/react';
+import { Card, CardHeader, CardBody } from '@heroui/react';
 
 import Image from 'next/image';
 import badge from '@/public/badge.jpg';
 import groupPhoto from '@/public/Group-Photo-Edit.jpg';
-import verticalBanner from '@/public/verticalbanner.jpg';
 import leftarrow from '@/public/left-arrow.png';
 import rightarrow from '@/public/right-arrow.png';
 

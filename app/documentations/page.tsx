@@ -7,7 +7,6 @@ import { Card, CardBody } from '@heroui/react';
 import Image from 'next/image';
 import badge from '@/public/badge.jpg';
 import groupPhoto from '@/public/Group-Photo-Edit.jpg';
-import verticalBanner from '@/public/verticalbanner.jpg';
 import leftarrow from '@/public/left-arrow.png';
 import rightarrow from '@/public/right-arrow.png';
 import approach from '@/public/system appraoch.png';

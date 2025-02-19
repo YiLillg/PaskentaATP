@@ -61,15 +61,22 @@ export async function POST(request: NextRequest) {
         headers: { 'Content-Type': 'application/json' },
       }
     );
-  } catch (error: any) {
-    console.error('Error sending email:', error);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('Error sending email:', error.message);
+      return new Response(
+        JSON.stringify({
+          message: 'Error sending email',
+          error: error.message,
+        }),
+        { status: 500, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
 
+    console.error('Unexpected error:', error);
     return new Response(
-      JSON.stringify({ message: 'Error sending email', error: error.message }),
-      {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      }
+      JSON.stringify({ message: 'Unexpected error occurred' }),
+      { status: 500, headers: { 'Content-Type': 'application/json' } }
     );
   }
 }

@@ -108,7 +108,7 @@ export default function ContactUs() {
           <Card className='bg-primary text-white p-6 rounded-xl shadow-lg flex-grow min-h-[350px] flex flex-col justify-between'>
             <CardHeader>
               <h2 className='text-lg md:text-xl font-semibold'>
-                Let's Keep In Touch
+                Let&apos;s Keep In Touch
               </h2>
             </CardHeader>
             <CardBody className='flex-grow'>
