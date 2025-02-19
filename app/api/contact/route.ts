@@ -24,13 +24,17 @@ export async function POST(request: NextRequest) {
 
     const userEmail = process.env.EMAIL_USER;
     const userPass = process.env.EMAIL_PASS;
-    const receiverEmail = process.env.RECEIVER_EMAIL;
+    const receiverEmails = [
+      process.env.RECEIVER_YL,
+      process.env.RECEIVER_ZS,
+      process.env.RECEIVER_AB,
+      process.env.RECEIVER_PZ,
+    ].filter(Boolean) as string[]; // Ensures all values are strings
 
-    if (!userEmail || !userPass || !receiverEmail) {
+    if (!userEmail || !userPass || receiverEmails.length === 0) {
       throw new Error('Missing required environment variables');
     }
 
-    // Configure nodemailer
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
@@ -43,14 +47,13 @@ export async function POST(request: NextRequest) {
 
     const mailOptions = {
       from: `"Public Inputs" <${userEmail}>`,
-      to: receiverEmail,
+      to: receiverEmails,
       subject: 'New Contact Form Submission',
       text: `You have a new form submission from Paskenta ATP website:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);
 
-    // Return success response
     return new Response(
       JSON.stringify({ message: 'Email sent successfully' }),
       {
@@ -59,7 +62,7 @@ export async function POST(request: NextRequest) {
       }
     );
   } catch (error: any) {
-    console.error('Error parsing JSON or sending email:', error);
+    console.error('Error sending email:', error);
 
     return new Response(
       JSON.stringify({ message: 'Error sending email', error: error.message }),
