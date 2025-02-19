@@ -90,8 +90,8 @@ export default function PublicOutreach() {
             <CardBody className='mt-4 w-full flex-grow flex flex-col justify-start sm:items-center py-2'>
               <p className='py-4'>Have a question? Contact us!</p>
               <p className='py-1'>Name: Yi Li</p>
-              <p className='py-1'>Phone: (111) 222 - 3333</p>
-              <p className='py-1'>Email: li@llgengineers.com</p>55r
+              <p className='py-1'>Phone: (949) 825 - 6175</p>
+              <p className='py-1'>Email: li@llgengineers.com</p>
             </CardBody>
           </Card>
         </div>
@@ -113,17 +113,18 @@ export default function PublicOutreach() {
 
           {/* Description */}
           <h1 className='text-base md:text-lg text-foreground text-left mb-6 '>
-            We want to hear your ideas and your experiences using the roadways
-            in the Laguna Beach. We have prepared an Interactive Webmap where
-            you can identify places where you've experienced roadway safety
-            challenges traveling, whether in a car, on foot, on a bike, or on
-            another mode. You can also identify specific safety concerns, such
-            as speeding cars, poorly lit areas, or lack of sidewalks. Along with
-            the Webmap is a survey where you can share you experiences with
-            traveling in the City of Laguna Beach and your vision for the future
-            of our roadways. The comment period is now closed as of 11/19.
-            Information and updates about the project can be found on the City's
-            website.
+            We want to hear from you! Share your experiences traveling on the
+            roadways within the Paskenta Band of Nomlaki Indians&apos;
+            community. We are working with StreetMap, developed by SafeTREC and
+            UC Berkeley, where you can mark locations where you&apos;ve
+            encountered safety challenges—whether you&apos;re driving, walking,
+            biking, or using another mode of transportation. You can also
+            highlight specific concerns like speeding, poor lighting, or missing
+            sidewalks. Alongside the Webmap, we invite you to complete a survey
+            to share your thoughts on roadway safety and your vision for a safer
+            community. Your input will help guide future improvements. The
+            comment period is now closed as of 03/30/25. Visit our website for
+            updates and more information.
           </h1>
 
           {/* Report Link */}
@@ -151,7 +152,7 @@ export default function PublicOutreach() {
               download='Tribal_Crash_Data_Tool_Survey.pdf'
               className='underline hover:text-blue-600 transition-colors'
             >
-              Download the Survey
+              Navigate to the Survey
             </a>
           </h2>
         </div>

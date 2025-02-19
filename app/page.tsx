@@ -30,7 +30,7 @@ export default function Home() {
           className='z-10 px-6 max-w-4xl'
         >
           <h1 className='font-extrabold text-5xl text-white drop-shadow-lg '>
-            Paskenta Active Transportation Plan
+            Paskenta Safety Action Plan
           </h1>
           <p className='font-medium text-lg text-white mt-4 leading-relaxed'>
             Our goal is to achieve a 50% reduction in pedestrian and cyclist
@@ -79,19 +79,19 @@ export default function Home() {
             </li>
             <li>
               <span className='font-bold'>
-                Develop a Comprehensive Safety Strategy:{' '}
-              </span>
-              Establish a structured safety program and toolbox that aligns with
-              best practices, supports systemic safety improvements, and fosters
-              opportunities for future initiatives.
-            </li>
-            <li>
-              <span className='font-bold'>
                 Target Key Emphasis Areas for Safety Interventions:{' '}
               </span>{' '}
               Use crash analysis, tribal objectives, and Tribal community
               insights to prioritize areas for safety improvements and
               transportation equity.
+            </li>
+            <li>
+              <span className='font-bold'>
+                Develop a Comprehensive Safety Strategy:{' '}
+              </span>
+              Establish a structured safety program and toolbox that aligns with
+              best practices, supports systemic safety improvements, and fosters
+              opportunities for future initiatives.
             </li>
             <li>
               <span className='font-bold'>
