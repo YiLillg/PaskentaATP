@@ -54,13 +54,13 @@ export default function PublicOutreach() {
             Project Overview
           </h2>
           <p className='text-foreground/90 leading-relaxed'>
-            In January 2025, the Reservation began partnering with LLG
-            Engineers, a transportation consulting firm, to assist with the SS4A
-            Plan. Subsequently, the team is working on the initial tasks,
+            The Tribe, in partnership with LLG Engineers, a transportation
+            consulting firm, to assist with the Comprehensive Safety Action Plan
+            (CSAP). Subsequently, the team is working on the initial tasks,
             including data collections, public outreach, review of background
             documentations, and development of a Community Engagement Plan. We
-            are encourage everyone to share their inputs, and help us sharpen a
-            better active transportation plan for the Reservation.
+            are encourage everyone to share their inputs, and help us shape a
+            better CSAP for the Tribe.
           </p>
         </div>
 

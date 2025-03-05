@@ -34,9 +34,9 @@ export const Logo = () => {
 const menuItems = [
   { key: 'home', label: 'Home', href: '/' },
   {
-    key: 'public-outreach',
-    label: 'Public Outreach',
-    href: '/public-outreach',
+    key: 'get-involved',
+    label: 'Get Involved',
+    href: '/get-involved',
   },
   { key: 'project-status', label: 'Project Status', href: '/project-status' },
   { key: 'documentations', label: 'Documentations', href: '/documentations' },
@@ -102,7 +102,7 @@ export default function App() {
         className='hidden sm:flex gap-6 mx-8 px-4'
         justify='center'
       >
-        {menuItems.slice(1).map((item) => (
+        {menuItems.map((item) => (
           <NavbarItem key={item.key}>
             <Link
               href={item.href}
