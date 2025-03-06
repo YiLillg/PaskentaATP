@@ -134,9 +134,9 @@ export default function PublicOutreach() {
                     Documentation Coming Soon
                   </h2>
                   <p className='text-gray-600 max-w-2xl mx-auto'>
-                    We're currently preparing comprehensive documentation for
-                    this project. Please check back later to access the latest
-                    reports, guidelines, and resources related to our
+                    We&apos;re currently preparing comprehensive documentation
+                    for this project. Please check back later to access the
+                    latest reports, guidelines, and resources related to our
                     transportation safety initiatives.
                   </p>
                 </div>

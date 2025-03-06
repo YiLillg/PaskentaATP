@@ -176,7 +176,7 @@ export default function PublicOutreach() {
                   Report Safety Concerns
                 </h2>
                 <p className='text-gray-600 max-w-2xl mx-auto'>
-                  Use the Street Story tool to mark locations where you've
+                  Use the Street Story tool to mark locations where you&apos;ve
                   encountered safety challenges
                 </p>
               </div>
