@@ -17,17 +17,19 @@ import logo from '@/public/logo.png';
 import { TbLayoutSidebarLeftCollapseFilled } from 'react-icons/tb';
 
 const Logo = () => (
-  <Image
-    src={logo}
-    alt='Tribe Icon'
-    width={25}
-    height={25}
-    quality={100}
-    priority
-    className='object-contain mt-24 z-50 hidden sm:block md:min-w-[180px] flex-shrink-0'
-  />
+  <div className='flex items-center mt-24 z-50 sm:block'>
+    <Image
+      src={logo}
+      alt='Tribe Icon'
+      width={150}
+      height={150}
+      className='object-contain'
+      unoptimized
+    />
+  </div>
 );
 
+// Rest of your code remains the same
 const menuItems = [
   { key: 'home', label: 'Home', href: '/' },
   {
