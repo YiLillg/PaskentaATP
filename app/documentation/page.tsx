@@ -134,50 +134,38 @@ export default function PublicOutreach() {
                     Documentation Coming Soon
                   </h2>
                   <p className='text-gray-600 max-w-2xl mx-auto'>
-                    We&apos;re currently preparing comprehensive documentation
-                    for this project. Please check back later to access the
-                    latest reports, guidelines, and resources related to our
+                    We&apos;re currently preparing the Comprehensive Safety
+                    Action Plan for this project. Please check back later to
+                    access the latest report and resources related to our
                     transportation safety initiatives.
                   </p>
                 </div>
 
                 {/* Optional: Document placeholders */}
-                <div className='w-full max-w-2xl mx-auto mt-8'>
-                  <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-                    {[
-                      'Final Report',
-                      'Safety Guidelines',
-                      'Community Feedback',
-                      'Implementation Plan',
-                    ].map((docName) => (
-                      <div
-                        key={docName}
-                        className='bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-center opacity-60'
+                <div className='flex justify-center items-center w-full p-6'>
+                  <div className='bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-center opacity-60 w-64'>
+                    <div className='mr-4 text-gray-400'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        className='h-10 w-10'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        stroke='currentColor'
                       >
-                        <div className='mr-4 text-gray-400'>
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            className='h-10 w-10'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            stroke='currentColor'
-                          >
-                            <path
-                              strokeLinecap='round'
-                              strokeLinejoin='round'
-                              strokeWidth={1.5}
-                              d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
-                            />
-                          </svg>
-                        </div>
-                        <div>
-                          <h3 className='font-medium text-gray-500'>
-                            {docName}
-                          </h3>
-                          <p className='text-sm text-gray-400'>Coming soon</p>
-                        </div>
-                      </div>
-                    ))}
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          strokeWidth={1.5}
+                          d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className='font-medium text-gray-500'>
+                        Final Report
+                      </h3>
+                      <p className='text-sm text-gray-400'>Coming soon</p>
+                    </div>
                   </div>
                 </div>
               </div>
