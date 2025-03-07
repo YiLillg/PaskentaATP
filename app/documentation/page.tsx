@@ -37,7 +37,7 @@ export default function PublicOutreach() {
 
         <div className='absolute bottom-10 right-10 flex flex-row items-center text-white z-20'>
           <MdKeyboardDoubleArrowLeft size={24} />
-          <h1 className='text-4xl font-bold mx-2'>Documentations</h1>
+          <h1 className='text-4xl font-bold mx-2'>Documentation</h1>
           <MdKeyboardDoubleArrowRight size={24} />
         </div>
       </div>
@@ -134,9 +134,9 @@ export default function PublicOutreach() {
                     Documentation Coming Soon
                   </h2>
                   <p className='text-gray-600 max-w-2xl mx-auto'>
-                    We're currently preparing comprehensive documentation for
-                    this project. Please check back later to access the latest
-                    reports, guidelines, and resources related to our
+                    We&apos;re currently preparing comprehensive documentation
+                    for this project. Please check back later to access the
+                    latest reports, guidelines, and resources related to our
                     transportation safety initiatives.
                   </p>
                 </div>

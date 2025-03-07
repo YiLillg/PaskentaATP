@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useEffect } from 'react';
 import {
   Navbar,
@@ -14,32 +13,32 @@ import {
   DropdownItem,
 } from '@heroui/react';
 import Image from 'next/image';
-import logo from '@/public/Logo.png';
+import logo from '@/public/logo.png';
 import { TbLayoutSidebarLeftCollapseFilled } from 'react-icons/tb';
 
-export const Logo = () => {
-  return (
-    <div className='z-50 hidden sm:block md:min-w-[300px] flex-shrink-0'>
-      <Image
-        src={logo}
-        alt='Tribe Icon'
-        width={300}
-        height={300}
-        className='mt-24 object-contain'
-      />
-    </div>
-  );
-};
+const Logo = () => (
+  <div className='flex items-center mt-24 z-50 sm:block'>
+    <Image
+      src={logo}
+      alt='Tribe Icon'
+      width={150}
+      height={150}
+      className='object-contain'
+      unoptimized
+    />
+  </div>
+);
 
+// Rest of your code remains the same
 const menuItems = [
   { key: 'home', label: 'Home', href: '/' },
   {
-    key: 'public-outreach',
-    label: 'Public Outreach',
-    href: '/public-outreach',
+    key: 'get-involved',
+    label: 'Get Involved',
+    href: '/get-involved',
   },
   { key: 'project-status', label: 'Project Status', href: '/project-status' },
-  { key: 'documentations', label: 'Documentations', href: '/documentations' },
+  { key: 'documentation', label: 'Documentation', href: '/documentation' },
   { key: 'contact-us', label: 'Contact Us', href: '/contact-us' },
 ];
 
@@ -52,21 +51,21 @@ export default function App() {
         setMenuOpen(false);
       }
     };
-
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
     <Navbar className='z-50 h-24 w-full flex p-4 font-bold bg-primary text-white text-xl justify-between fixed top-0 left-0'>
-      <NavbarBrand className='hidden sm:block'>
-        <Link href='/'>
+      {/* Logo on the left */}
+      <NavbarBrand className='hidden sm:flex items-center relative'>
+        <Link href='/' className='flex items-center'>
           <Logo />
         </Link>
       </NavbarBrand>
 
       {/* Mobile Menu Button */}
-      <div className='sm:hidden relative'>
+      <div className='sm:hidden'>
         <Dropdown isOpen={menuOpen} onOpenChange={setMenuOpen}>
           <DropdownTrigger>
             <Button
@@ -97,12 +96,9 @@ export default function App() {
         </Dropdown>
       </div>
 
-      {/* Desktop Menu */}
-      <NavbarContent
-        className='hidden sm:flex gap-6 mx-8 px-4'
-        justify='center'
-      >
-        {menuItems.slice(1).map((item) => (
+      {/* Desktop Menu Items on the right */}
+      <NavbarContent className='hidden sm:flex gap-6 justify-end'>
+        {menuItems.map((item) => (
           <NavbarItem key={item.key}>
             <Link
               href={item.href}
