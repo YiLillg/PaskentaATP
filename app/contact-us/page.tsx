@@ -111,32 +111,6 @@ export default function ContactUs() {
                       Get In Touch
                     </h2>
                   </div>
-
-                  <div className='flex items-start mt-8 mb-6 transform hover:translate-x-2 transition-transform duration-300'>
-                    <div className='flex-shrink-0 mt-1 mr-4 bg-white/30 p-3 rounded-lg shadow-inner'>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        className='h-6 w-6'
-                        viewBox='0 0 20 20'
-                        fill='currentColor'
-                      >
-                        <path d='M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z' />
-                        <path d='M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z' />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className='text-xl font-semibold mb-2'>Email Us</h3>
-                      <p className='text-lg'>
-                        <a
-                          href='mailto:paskenta-sap@gmail.com'
-                          className='text-white hover:text-secondary transition-all group'
-                        >
-                          paskenta-sap@gmail.com
-                          <span className='block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-white/70'></span>
-                        </a>
-                      </p>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Testimonial message */}

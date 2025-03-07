@@ -90,7 +90,7 @@ export default function PublicOutreach() {
               {/* Status alert with better styling */}
               <div className='bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mt-6'>
                 <p className='text-amber-800 font-medium'>
-                  The comment period will be closed on March 21, 25.
+                  The comment period will close on March 21, 2025.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function PublicOutreach() {
                     href='mailto:paskenta-sap@gmail.com'
                     className='inline-block px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all hover:scale-105 shadow-md'
                   >
-                    paskenta-sap@gmail.com
+                    Contact Us
                   </a>
                 </div>
               </div>
