@@ -261,7 +261,7 @@ export default function Home() {
                 {
                   title: 'Target Key Emphasis Areas for Safety Interventions',
                   description:
-                    'Use crash analysis, tribal objectives, and Tribal community insights to prioritize areas for safety improvements and transportation equity.',
+                    'Use crash analysis, tribal objectives, and tribal community insights to prioritize areas for safety improvements and transportation equity.',
                 },
                 {
                   title: 'Develop a Comprehensive Safety Strategy',

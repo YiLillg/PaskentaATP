@@ -58,7 +58,7 @@ export default function PublicOutreach() {
                 className='w-8 h-8 mr-4'
               />
               <h1 className='font-extrabold text-2xl md:text-3xl text-center text-primary'>
-                Share Inputs with Us
+                Share Input with Us
               </h1>
               <Image
                 src={rightarrow}
@@ -90,7 +90,7 @@ export default function PublicOutreach() {
               {/* Status alert with better styling */}
               <div className='bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mt-6'>
                 <p className='text-amber-800 font-medium'>
-                  The comment period is now closed as of 03/21/25.
+                  The comment period will be closed on March 21, 25.
                 </p>
               </div>
             </div>

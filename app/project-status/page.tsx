@@ -54,13 +54,13 @@ export default function PublicOutreach() {
             Project Overview
           </h2>
           <p className='text-foreground/90 leading-relaxed'>
-            The Tribe, in partnership with LLG Engineers, a transportation
-            consulting firm, to assist with the Comprehensive Safety Action Plan
-            (CSAP). Subsequently, the team is working on the initial tasks,
-            including data collections, public outreach, review of background
-            documentations, and development of a Community Engagement Plan. We
-            are encourage everyone to share their inputs, and help us shape a
-            better CSAP for the Tribe.
+            The Tribe, in collaboration with LLG Engineers, a transportation
+            consulting firm, is actively working on the Comprehensive Safety
+            Action Plan (CSAP). The team has begun initial tasks, including data
+            collection, public outreach, reviewing background documents, and
+            developing a Community Engagement Plan. We encourage everyone to
+            share their input and help shape a stronger, more effective CSAP for
+            the Tribe.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function PublicOutreach() {
             <CardHeader className='flex flex-col items-center bg-background py-4 border-b border-primary/10'>
               <div className='flex items-center justify-center gap-4 text-primary'>
                 <Image src={leftarrow} alt='left arrow' className='w-6 h-6' />
-                <h1 className='font-extrabold text-2xl'>Incoming Events</h1>
+                <h1 className='font-extrabold text-2xl'>Upcoming Events</h1>
                 <Image src={rightarrow} alt='right arrow' className='w-6 h-6' />
               </div>
             </CardHeader>
