@@ -38,7 +38,7 @@ const menuItems = [
     href: '/get-involved',
   },
   { key: 'project-status', label: 'Project Status', href: '/project-status' },
-  { key: 'documentations', label: 'Documentations', href: '/documentations' },
+  { key: 'documentation', label: 'Documentation', href: '/documentation' },
   { key: 'contact-us', label: 'Contact Us', href: '/contact-us' },
 ];
 

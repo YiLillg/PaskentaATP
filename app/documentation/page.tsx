@@ -37,7 +37,7 @@ export default function PublicOutreach() {
 
         <div className='absolute bottom-10 right-10 flex flex-row items-center text-white z-20'>
           <MdKeyboardDoubleArrowLeft size={24} />
-          <h1 className='text-4xl font-bold mx-2'>Documentations</h1>
+          <h1 className='text-4xl font-bold mx-2'>Documentation</h1>
           <MdKeyboardDoubleArrowRight size={24} />
         </div>
       </div>

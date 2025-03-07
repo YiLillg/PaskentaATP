@@ -140,7 +140,7 @@ export default function PublicOutreach() {
         </div>
 
         {/* Project timeline - New addition for more information */}
-        <Card className='rounded-xl overflow-hidden shadow-lg border border-secondary/10 mt-4'>
+        {/* <Card className='rounded-xl overflow-hidden shadow-lg border border-secondary/10 mt-4'>
           <CardHeader className='flex flex-col items-center bg-background py-4 border-b border-secondary/10'>
             <div className='flex items-center justify-center gap-4 text-primary'>
               <Image src={leftarrow} alt='left arrow' className='w-6 h-6' />
@@ -197,7 +197,7 @@ export default function PublicOutreach() {
               </div>
             </div>
           </CardBody>
-        </Card>
+        </Card> */}
       </section>
     </div>
   );

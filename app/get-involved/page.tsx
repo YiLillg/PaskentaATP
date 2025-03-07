@@ -90,7 +90,7 @@ export default function PublicOutreach() {
               {/* Status alert with better styling */}
               <div className='bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mt-6'>
                 <p className='text-amber-800 font-medium'>
-                  The comment period is now closed as of 03/30/25.
+                  The comment period is now closed as of 03/21/25.
                 </p>
               </div>
             </div>
