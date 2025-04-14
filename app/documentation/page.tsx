@@ -105,9 +105,10 @@ export default function PublicOutreach() {
         </div>
 
         {/* Right Section - Documentation */}
+        {/* Right Section - Documentation */}
         <div className='w-full md:w-7/12 lg:w-2/3 flex flex-col'>
           <Card className='shadow-xl rounded-xl overflow-hidden h-full flex flex-col'>
-            {/* Title with improved styling */}
+            {/* Title */}
             <div className='bg-gray-50 p-4 border-b'>
               <div className='flex flex-row items-center justify-center'>
                 <Image
@@ -126,24 +127,23 @@ export default function PublicOutreach() {
               </div>
             </div>
 
-            {/* Content with placeholder for future documentation */}
+            {/* Content */}
             <CardBody className='p-8 flex-grow flex flex-col'>
               <div className='flex flex-col items-center justify-center h-full'>
                 <div className='text-center mb-8'>
                   <h2 className='text-2xl font-semibold text-primary mb-4'>
-                    Documentation Coming Soon
+                    Final Report Available
                   </h2>
                   <p className='text-gray-600 max-w-2xl mx-auto'>
-                    We&apos;re currently preparing the Comprehensive Safety
-                    Action Plan for this project. Please check back later to
-                    access the latest report and resources related to our
-                    transportation safety initiatives.
+                    The Comprehensive Safety Action Plan has been finalized. You
+                    can now download the full report and access important
+                    information related to our transportation safety
+                    initiatives.
                   </p>
                 </div>
 
-                {/* Optional: Document placeholders */}
                 <div className='flex justify-center items-center w-full p-6'>
-                  <div className='bg-gray-50 p-6 rounded-lg border border-gray-200 flex items-center opacity-60 w-64'>
+                  <div className='bg-primary p-6 rounded-2xl border border-gray-200 shadow-sm flex items-center w-72 hover:shadow-md transition duration-200'>
                     <div className='mr-4 text-gray-400'>
                       <svg
                         xmlns='http://www.w3.org/2000/svg'
@@ -151,6 +151,7 @@ export default function PublicOutreach() {
                         fill='none'
                         viewBox='0 0 24 24'
                         stroke='currentColor'
+                        aria-hidden='true'
                       >
                         <path
                           strokeLinecap='round'
@@ -161,10 +162,17 @@ export default function PublicOutreach() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className='font-medium text-gray-500'>
+                      <h3 className='font-semibold text-white mb-1'>
                         Final Report
                       </h3>
-                      <p className='text-sm text-gray-400'>Coming soon</p>
+                      <a
+                        href='https://drive.google.com/file/d/1vQEdUC5BbAJr2fV--o-eHPrL_QVLs0Cu/view?usp=sharing'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='text-sm text-white hover:underline'
+                      >
+                        Download Final Report
+                      </a>
                     </div>
                   </div>
                 </div>
